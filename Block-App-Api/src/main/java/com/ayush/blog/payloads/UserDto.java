@@ -1,12 +1,14 @@
 package com.ayush.blog.payloads;
 
+import jakarta.persistence.Access;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
+
 @Getter
 @Setter
+@NoArgsConstructor
 public class UserDto {
 
     private int id;
@@ -18,4 +20,7 @@ public class UserDto {
 	private String password;
 	
 	private String  about;
+
+	
+	
 }
