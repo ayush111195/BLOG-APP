@@ -34,7 +34,7 @@ public class UserController {
 	return new ResponseEntity<UserDto>(createUser,HttpStatus.CREATED);
 		
 	}
-	//put -update user0--->>
+	//put -update user--->>
 	@PutMapping("/{userId}")
 	public ResponseEntity<UserDto> updateUser(@RequestBody UserDto userDto,@PathVariable Integer userId){
 		UserDto updateUser = this.userService.updateUser(userDto, userId);
