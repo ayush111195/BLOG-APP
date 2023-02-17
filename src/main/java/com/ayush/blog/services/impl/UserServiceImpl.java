@@ -87,7 +87,7 @@ public class UserServiceImpl implements UserService {
 public UserDto userToDto(User user)
 {
 	
-	UserDto map1 = this.modelMapper.map(user, UserDto.class);
+	UserDto map2 = this.modelMapper.map(user, UserDto.class);
 //	UserDto userdto=new UserDto();
 //	userdto.setId(user.getId());
 //	userdto.setName(user.getName());
@@ -96,7 +96,7 @@ public UserDto userToDto(User user)
 //	userdto.setPassword(user.getPassword());
 //	return userdto;
 	
-	return map1;
+	return map2;
 }
 
 }
